@@ -17,7 +17,7 @@ app.use('/api/restaurants', restaurantRoutes);
 app.use(errorHandler);
 
 // Health check endpoint
-app.get('/health', (req, res) => {
+app.get('api/health', (req, res) => {
   res.status(200).json({ status: 'OK' });
 });
 
